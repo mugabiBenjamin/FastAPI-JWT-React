@@ -21,19 +21,19 @@ uvicorn main:app --reload
 
 ```plaintext
 .
-├── app
-│   ├── api
-│   │   └── v1
-│   │       └── endpoints
-│   ├── core
-│   ├── models
-│   ├── schemas
-│   └── services
-├── attendance.db
-├── main.py
-├── pyproject.toml
-├── README.md
-└── uv.lock
+├── app                             # Main application package
+│   ├── api                         # API routing and endpoints
+│   │   └── v1                      # Version 1 of the API
+│   │       └── endpoints           # API endpoint implementations
+│   ├── core                        # Core settings, config, and utilities
+│   ├── models                      # Database models
+│   ├── schemas                     # Pydantic schemas for data validation
+│   └── services                    # Business logic and service layer
+├── attendance.db                   # SQLite database file
+├── main.py                         # Application entry point
+├── pyproject.toml                  # Project dependencies and metadata
+├── README.md                       # Project documentation
+└── uv.lock                         # Dependency lock file for uv
 ```
 
 ## Environment Variables
